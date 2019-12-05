@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Repertoire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Nas css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body onload="rez()">
+    <nav class="navbar navbar-header sticky-top navbar-expand-lg navbar-light bg-dark m-3 rounded">
+        <a class="navbar-brand p-0 m-0" href="indexEN.html">
+                <img class="p-0 m-0 rounded" src="images/logo.png" height="40" alt="Festival Logo">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active ml-4">
+                    <a class="nav-link text-light mr-1" href="indexEN.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-1" href="vestiEN.html">News</a>
+                </li>
+				
+				<li class="nav-item">
+                    <a class="nav-link text-light mr-1" href="istorijatEN.html">History</a>
+                </li>
+				
+				<li class="nav-item">
+                   <a class="nav-link text-light mr-1" href="repertoarEN.html">Repertoire</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sponzoriEN.html">Sponsors</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a href="https://www.facebook.com" class="fa fa-facebook mr-0"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter mr-3"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="breadcrumb bg-dark">
+                    <li class="breadcrumb-item">
+                        <a href="indexEN.html">
+                            <font color="white" face="Palatino Linotype">Home</font>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <font face="Palatino Linotype">Repertoire</font>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Repertoire</h1>
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="custom-select" id="sel">
+                              <option selected>Sort by</option>
+                              <option value="1">Name of movie</option>
+                              <option value="3">Popularity</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-dark" id="btnId">Sort</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="film">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <a href="film1EN.html"><img  class ="m-2" class= "align-self-start"src="images/poster1.jpg" width="150px" height = "200px" align="left"></a>
+                                <a href="film1EN.html" class="naslovFilma">
+                                    <h2>BLACK BUTTERFLY</h2>
+
+                                </a>
+
+                                <i>Thriler | 93 min</i><br><br>
+                                <i>Start preview :</i> 10.05.2019
+                                <br><br>
+                                <img src="images/1star.png" width="100px">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-monospace">
+                                    <font size="2"><b>Short summary:</b> Outside a mountain town grappling with a series of abductions and murders, Paul, a reclusive writer, struggles to start what he hopes will be a career-saving screenplay. </font>
+                                </p>
+                                <p><b>Actors:</b> Antonio Banderas, Jonathan Rhys Meyers, Piper Perabo</p>
+                                <p><b>Director:</b> Brian Goodman</p>
+                            </div><br>
+                            <label class=" ml-4 align-self-start" align="left" id="br1"></label>
+
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="film">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <a href="film2EN.html"><img  class ="m-2" class= "align-self-start"src="images/poster2.jpg" width="150px" height = "200px" align="left"></a>
+                                <a href="film2EN.html" class="naslovFilma">
+                                    <h2>FANTASTIC WOMAN</h2>
+
+                                </a>
+
+                                <i>Drama | 100 min</i><br><br>
+                                <i>Start preview :</i> 24.05.2019
+                                <br><br>
+                                <img src="images/5stars.png" width="100px">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-monospace">
+                                    <font size="2"><b>Short summary:</b> Marina is a young waitress and wannabe singer. Orlando owns a printing company. Together they plan their future. When Orlando dies suddenly, Marina has to stand up to his family and society to show them what she truly is: a complex, strong, forthright and... fantastic woman.</font>
+                                </p>
+                                <p><b>Actors:</b> Daniela Vega, Francisco Reyes, Luis Gnecco, Aline Küppenheim</p>
+                                <p><b>Director:</b> Sebastián Lelio</p>
+                            </div><br>
+                            <label class=" ml-4 align-self-start" align="left" id="br2"></label>
+
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="film">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <a href="film3EN.html"><img  class ="m-2" class= "align-self-start"src="images/poster3.jpg" width="150px" height = "200px" align="left"></a>
+                                <a href="film3EN.html" class="naslovFilma">
+                                    <h2>SEE YOU UP THERE</h2>
+
+                                </a>
+
+                                <i>Drama | 117 min</i><br><br>
+                                <i>Start preview :</i> 24.05.2019
+                                <br><br>
+                                <img src="images/3stars.png" width="100px">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-monospace">
+                                    <font size="2"><b>Short summary:</b> November 1919. Two survivors of the trenches set up a scam based on war memorials. One is a brilliant illustrator, the other an unassuming accountant. In the France of the Roaring Twenties, their operation becomes as dangerous as it is spectacular.</font>
+                                </p>
+                                <p><b>Actors:</b> Nahuel Pérez Biscayart, Albert Dupontel, Laurent Lafitte</p>
+                                <p><b>Director:</b> Albert Dupontel</p>
+                            </div><br>
+                            <label class=" ml-4 align-self-start" align="left" id="br3"></label>
+
+
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="film">
+                        <div class="row">
+
+
+                            <div class="col-sm-6">
+                                <a href="film4EN.html"><img  class ="m-2" class= "align-self-start"src="images/poster4.jpg" width="150px" height = "200px" align="left"></a>
+                                <a href="film4EN.html" class="naslovFilma">
+                                    <h2>THE NILE HILTON INCIDENT</h2>
+
+                                </a>
+
+                                <i>Thriler | 106 min</i><br><br>
+                                <i>Start preview :</i> 28.02.2019
+                                <br><br>
+                                <img src="images/2stars.png" width="100px">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-monospace">
+                                    <font size="2"><b>Short summary:</b> Cairo 2011, just weeks before the revolution. Police Detective Noredin, working in the in-famous Kasr el-Nil Police Station, is handed the case of a murdered singer. He soon realizes that the investigation concerns the very power elite, close to the President’s inner circle.</font>
+                                </p>
+                                <p><b>Actors:</b> Fares Fares, Mari Malek, Yasser Ali Maher</p>
+                                <p><b>Director:</b>Tarik Saleh</p>
+                            </div><br>
+                            <label class=" ml-4 align-self-start" align="left" id="br4"></label>
+
+                        </div>
+                        <hr>
+                    </div>
+
+
+                </div>
+                <button class="btn btn-dark" style="float:right" onclick="obrisiRez()"><font color="gold">Delete all reservations</font></button>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+    <footer class="page-footer font-small bg-dark pt-4 mt-4">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-sm-3"><a href="#"><img class="m-3 rounded" onclick="window.scrollTo(0, 0);" src="images/logo.png" align="left" width="150px" height="100px" float="left"></a></div>
+                <div class="col-sm-6">
+                    <center class="m-3">
+                        <p style="color:white; padding-bottom:1px; margin-bottom:1px; padding-top:1px; margin-top:1px;">
+                            <i>Copyright &copy; 2019</i>
+                        </p>
+                    </center>
+                </div>
+                <div class="col-sm-3">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(function() {
+
+            var alpha = [];
+            var number = [];
+            var normal = []
+            var popularni = []
+
+            $('.film').each(function() {
+
+                var alphaArr = [];
+                var numArr = [];
+                var normalArr = [];
+                var populArr = [];
+
+                alphaArr.push($('h2', this).text());
+                alphaArr.push($(this));
+                alpha.push(alphaArr);
+                alpha.sort();
+
+                numArr.push($('h3', this).text());
+                numArr.push($(this));
+                number.push(numArr);
+                number.sort();
+
+                normalArr.push($('h3', this).text());
+                normalArr.push($(this));
+                normal.push(normalArr);
+
+                var str;
+                switch ($('h2', this).text()) {
+                    case "BLACK BUTTERFLY":
+                        if (localStorage.film1)
+                            str = localStorage.film1;
+                        else
+                            str = 0;
+                        break;
+                    case "FANTASTIC WOMAN":
+                        if (localStorage.film2)
+                            str = localStorage.film2;
+                        else
+                            str = 0;
+                        break;
+                    case "SEE YOU UP THERE":
+                        if (localStorage.film3)
+                            str = localStorage.film3;
+                        else
+                            str = 0;
+                        break;
+                    case "THE NILE HILTON INCIDENT":
+                        if (localStorage.film4)
+                            str = localStorage.film4;
+                        else
+                            str = 0;
+                        break;
+
+                }
+
+                populArr.push(str);
+                populArr.push($(this));
+                popularni.push(populArr);
+                popularni.sort();
+                popularni.reverse();
+
+            })
+
+
+            $('#btnId').on('click', function() {
+                $('.film').remove();
+                if (document.getElementById("sel").value == "1") {
+                    for (var i = 0; i < alpha.length; i++) {
+                        $('.jumbotron').append(alpha[i][1]);
+                    }
+                } else if (document.getElementById("sel").value == "3") {
+                    for (var i = 0; i < popularni.length; i++) {
+                        $('.jumbotron').append(popularni[i][1]);
+                    }
+                } else {
+                    for (var i = 0; i < normal.length; i++) {
+                        $('.jumbotron').append(normal[i][1]);
+                    }
+
+                }
+            })
+
+
+
+        })
+
+        function rez() {
+            if (localStorage.film1)
+                document.getElementById("br1").innerHTML = "Number of reservations: " + localStorage.film1;
+            else
+                document.getElementById("br1").innerHTML = "Number of reservations: 0";
+            if (localStorage.film2)
+                document.getElementById("br2").innerHTML = "Number of reservations: " + localStorage.film2;
+            else
+                document.getElementById("br2").innerHTML = "Number of reservations: 0";
+            if (localStorage.film3)
+                document.getElementById("br3").innerHTML = "Number of reservations: " + localStorage.film3;
+            else
+                document.getElementById("br3").innerHTML = "Number of reservations: 0";
+            if (localStorage.film4)
+                document.getElementById("br4").innerHTML = "Number of reservations: " + localStorage.film4;
+            else
+                document.getElementById("br4").innerHTML = "Number of reservations: 0";
+        }
+
+        function obrisiRez() {
+            localStorage.film1 = 0;
+            localStorage.film2 = 0;
+            localStorage.film3 = 0;
+            localStorage.film4 = 0;
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

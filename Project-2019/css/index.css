@@ -1,0 +1,125 @@
+body {
+    background-color: #cccccc;
+     background-image: url(../images/bgg.jpg);
+    background-size: contain;
+    font-family: sans-serif;
+}
+
+#jezik:hover,active,visited{
+    text-decoration: none;
+    color: #669966;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover{    
+    text-decoration: none;
+}
+nav.navbar {
+    font-size: 130%;
+}
+
+.naslovFilma{
+    color: black; 
+}
+
+.naslovFilma:hover{    
+    text-decoration: none;
+    color: gray; 
+}
+
+
+    #sponzor {
+   background-image: url('images/ford2.png');
+   height: 70px;
+   width: 120px;
+}
+
+#sponzor:hover {
+   background-image: url('images/ford1.png');
+}
+
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #ADD8E6;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.style{
+    font-style: italic;
+    color: gray;
+}
+
+.gallery{
+    margin: 10px, 50px;
+}
+.gallery img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.gallery img:hover{
+        filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.tab{
+    font-weight: bold;
+    color:white;
+}
+.tab:hover{
+    font-weight: bold;
+    color:gold;
+}
+
+.tabinvert{
+    font-weight: bold;
+    color:gold;
+}
+.tabinvert:hover{
+    font-weight: bold;
+    color:white;
+}
+
+.thicker{
+    font-weight: bold;
+}
