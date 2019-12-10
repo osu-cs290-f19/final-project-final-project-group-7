@@ -19,7 +19,7 @@ body {
     border-radius: 50%;
 }
 
-.fa:hover{    
+.fa:hover{
     text-decoration: none;
 }
 nav.navbar {
@@ -27,12 +27,12 @@ nav.navbar {
 }
 
 .naslovFilma{
-    color: black; 
+    color: black;
 }
 
-.naslovFilma:hover{    
+.naslovFilma:hover{
     text-decoration: none;
-    color: gray; 
+    color: gray;
 }
 
 
@@ -51,7 +51,7 @@ nav.navbar {
     display: block;
     text-align: center;
     overflow: hidden;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .strike > span {
