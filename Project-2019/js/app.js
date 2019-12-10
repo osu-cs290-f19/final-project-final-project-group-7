@@ -11,6 +11,8 @@ var mongoURL = 'mongodb://' + mongoUser + ':' + mongoPassword + '@' + mongoHost 
 
 var mongoDBDatabase;
 
+//define middleware here
+
 MongoClient.connect(mongoURL, function (err, client) {
     if (err) {
       throw err;
@@ -39,7 +41,8 @@ MongoClient.connect(mongoURL, function (err, client) {
             {
                 url: "images/film1mala3.jpg"
             }
-        ]
+        ],
+        reservations: 0
     });
 
     db.films.insertOne({
@@ -61,7 +64,8 @@ MongoClient.connect(mongoURL, function (err, client) {
             {
                 url: "images/film3mala3.jpg"
             }
-        ]
+        ],
+        reservations: 0
     });
 
     db.films.insertOne({
@@ -83,7 +87,8 @@ MongoClient.connect(mongoURL, function (err, client) {
             {
                 url: "images/film2mala3.jpg"
             }
-        ]
+        ],
+        reservations: 0
     });
 
     db.films.insertOne({
@@ -105,5 +110,32 @@ MongoClient.connect(mongoURL, function (err, client) {
             {
                 url: "images/film4mala3.jpg"
             }
-        ]
+        ],
+        reservations: 0
     });
+
+   
+
+    app.get('/data', function (req, res, next) {...});
+    var films = db.collection('films');
+    var filmsCursor = collection.find({});
+    filmsCursor.toArray(function (err, filmsDocs) {
+        if (err) {
+          res.status(500).send("Error fetching people from DB.");
+        } else {
+          /*
+           * Use documents in filmsDocs to construct arguments
+           * to our view template and then use res.render() to
+           * render the page with the template and its arguments.
+           */
+          
+        }
+      });
+      
+
+    var selectedMovie;
+
+    db.films.updateOne(
+        {title: selectedMovie},
+        {reservations: ++}
+    );
